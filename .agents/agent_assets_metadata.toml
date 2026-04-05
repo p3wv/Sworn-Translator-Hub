@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "jnrRBQHsOQfIR9_k_4iyd"
+uri = "file://artifacts/sworn-translator/public/translator-portrait.png"
+type = "image"
+title = "Professional sworn translator portrait"
