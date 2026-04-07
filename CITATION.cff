@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Sworn Translator Hub
+authors:
+  - family-names: Schröder
+    given-names: Elżbieta
+    orcid: https://orcid.org/0000-0000-0000-0000
+    affiliation: Sworn Translator Hub
+    email: epschroeder@op.pl
+    github: thekicia3
+abstract: >
+  Sworn Translator Hub is a modern, open-source platform for certified translation services, featuring a React frontend, Express backend, and modular TypeScript monorepo.
+license: MIT
+repository-code: https://github.com/thekicia3/sworn-translator-hub

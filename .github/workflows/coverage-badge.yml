@@ -1,0 +1,44 @@
+name: Test Coverage Badge
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run tests with coverage
+        run: pnpm test:coverage
+      - name: Generate coverage badge
+        uses: tj-actions/coverage-badge-js@v2
+        with:
+          output: ./coverage/coverage-badge.svg
+      - name: Upload coverage badge SVG to gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 5de95f073a61f690df407234e6d1265e
+          file_path: ./coverage/coverage-badge.svg
+          gist_file_name: coverage-badge.svg
+
+      - name: Upload coverage summary JSON to gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 5de95f073a61f690df407234e6d1265e
+          file_path: ./coverage/coverage-summary.json
+          file_type: json
+          gist_file_name: coverage.json

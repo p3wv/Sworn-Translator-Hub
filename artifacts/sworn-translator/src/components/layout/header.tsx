@@ -8,9 +8,9 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/pricing", label: "Pricing" },
+    { href: "/", label: "Strona główna" },
+    { href: "/about", label: "O mnie" },
+    { href: "/pricing", label: "Cennik" },
   ];
 
   return (
@@ -21,8 +21,8 @@ export function Header() {
             <Scale className="h-5 w-5" />
           </div>
           <div className="flex flex-col">
-            <span className="font-serif font-bold text-lg leading-tight text-foreground tracking-wide">MARCUS V. AURELIUS</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground leading-tight">Sworn Translator</span>
+            <span className="font-serif font-bold text-lg leading-tight text-foreground tracking-wide">ELŻBIETA SCHRÖDER</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground leading-tight">Tłumacz przysięgły</span>
           </div>
         </Link>
         <div className="hidden md:flex items-center gap-8">
@@ -39,7 +39,7 @@ export function Header() {
             ))}
           </nav>
           <Link href="/request" data-testid="link-request-quote">
-            <Button size="lg" className="font-serif text-md tracking-wide px-8">Request Translation</Button>
+            <Button size="lg" className="font-serif text-md tracking-wide px-8">Zamów Tłumaczenie</Button>
           </Link>
         </div>
         <button
@@ -65,7 +65,7 @@ export function Header() {
               </Link>
             ))}
             <Link href="/request" onClick={() => setIsMenuOpen(false)} data-testid="link-mobile-request">
-              <Button className="w-full font-serif text-md" size="lg">Request Translation</Button>
+              <Button className="w-full font-serif text-md" size="lg">Zamów Tłumaczenie</Button>
             </Link>
           </nav>
         </div>

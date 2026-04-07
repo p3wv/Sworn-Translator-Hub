@@ -12,47 +12,47 @@ export function Footer() {
                 <Scale className="h-5 w-5" />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-lg leading-tight tracking-wide">MARCUS V. AURELIUS</span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground leading-tight">Sworn Translator</span>
+                <span className="font-serif font-bold text-lg leading-tight tracking-wide">ELŻBIETA SCHRÖDER</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground leading-tight">Tłumacz przysięgły</span>
               </div>
             </Link>
             <p className="text-muted-foreground text-sm max-w-sm leading-relaxed">
-              Certified sworn translations with legal validity across international borders. Precision, confidentiality, and absolute reliability for your most important documents.
+              Certyfikowane tłumaczenia przysięgłe z legalną ważnością w obrębie międzynarodowych granic. Precyzja, poufność i absolutna niezawodność dla Twoich najważniejszych dokumentów.
             </p>
           </div>
           <div className="md:col-span-2 md:col-start-7">
-            <h3 className="font-serif font-semibold mb-6 text-foreground tracking-wide">SERVICES</h3>
+            <h3 className="font-serif font-semibold mb-6 text-foreground tracking-wide">USŁUGI</h3>
             <ul className="space-y-4 text-sm text-muted-foreground">
-              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-legal">Legal Contracts</Link></li>
-              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-certs">Certificates</Link></li>
-              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-academic">Academic Transcripts</Link></li>
-              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-medical">Medical Records</Link></li>
-              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-corporate">Corporate Documents</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-legal">Umowy Prawne</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-certs">Certyfikaty</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-academic">Transkrypty Akademickie</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-medical">Rekordy Medyczne</Link></li>
+              <li><Link href="/pricing" className="hover:text-primary transition-colors" data-testid="link-footer-corporate">Dokumenty Korporacyjne</Link></li>
             </ul>
           </div>
           <div className="md:col-span-3">
-            <h3 className="font-serif font-semibold mb-6 text-foreground tracking-wide">CONTACT</h3>
+            <h3 className="font-serif font-semibold mb-6 text-foreground tracking-wide">KONTAKT</h3>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="leading-relaxed">1200 Legal Avenue, Suite 400<br/>1204 Geneva, Switzerland</span>
+                <span className="leading-relaxed">Fryderyka Chopina 29<br/>67-200, Głogów</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+41 22 555 0123</span>
+                <span>+48 609 457 039</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>contact@aurelius-translation.com</span>
+                <span>epschroeder@op.pl</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Marcus V. Aurelius, Sworn Translator. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Elżbieta Schröder, Tłumacz przysięgły. Wszelkie prawa zastrzeżone.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-primary transition-colors" data-testid="link-privacy">Privacy Policy</Link>
-            <Link href="#" className="hover:text-primary transition-colors" data-testid="link-terms">Terms of Service</Link>
+            <Link href="#" className="hover:text-primary transition-colors" data-testid="link-privacy">Polityka Prywatności</Link>
+            <Link href="#" className="hover:text-primary transition-colors" data-testid="link-terms">Warunki korzystania z usługi</Link>
           </div>
         </div>
       </div>
